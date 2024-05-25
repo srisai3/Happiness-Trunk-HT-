@@ -1,0 +1,136 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", sans-serif;
+}
+.playfair_font{
+    font-family: "Playfair Display", serif;
+}
+/*   Navbar Section   */
+#navSection .nav-link{
+    color: #000;
+    font-weight: 500;
+    border-radius: 10px;
+    margin: 5px 25px 5px 0;
+    padding: 5px 10px;
+    font-size: 16px;
+    text-align: center;
+}
+#navSection .nav-link.active, #navSection .nav-link:hover{
+    background-color: #008080;
+    color: #ffffff;
+}
+
+/*   Custom Gift Section   */
+.customgift_text{
+    background-color: #FFFAF4;
+    margin-left: -5%;
+}
+.customgift_des, .description_text,.contact_des{
+    width: 50%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.work_desc{
+    width: 80%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.about_des{
+    width: 70%;
+    font-size: 18px;
+    line-height: 1.5;
+}
+.contact_des{
+    width: 75%;
+}
+/*   Our Work Section   */
+.insta_btn{
+    background-color: #008080;
+    color: #ffffff;
+    padding: 10px 18px;
+    border-radius: 10px;
+    margin: 10px 0;
+    border: none;
+}
+/*   About US Section   */
+.about{
+    background-image: url('../Images/Aboutus-img.png');
+    background-size: cover;
+    color: #ffffff;
+}
+.about_head::before{
+    content:url('../Images/Line_white1.png');
+    margin-right: 10px;
+}
+.about_head::after{
+    content:url('../Images/Line_white.png');
+    margin-left: 10px;
+}
+/*   Contact Section   */
+.contact_head::before, .clients_head::before{
+    content:url('../Images/Line_black1.png');
+    margin-right: 10px;
+}
+.contact_head::after, .clients_head::after{
+    content:url('../Images/Line_black.png');
+    margin-left: 10px;
+}
+.form_w{
+    width: 50%;
+}
+.submit_btn{
+    background-color: #008080 !important ;
+}
+/*   Footer Section   */
+.foot1{
+    background-color: #FAFAFA;
+}
+.foot_des{
+    font-size: 16px;
+    line-height: 1.5;
+    color: #464646;
+}
+.foot_style li a, .foot_style li{
+    color: #464646;
+    font-size: 16px;
+    text-decoration: none;
+}
+.foot_head{
+    color: #000;
+    font-size: 20px;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+.foot2{
+    background-color: #008080;
+    color: #ffffff;
+    font-size: 16px;
+}
+
+.sticky {
+    position:fixed;
+    top:0;
+    background-color: #ffffff;
+    width: 100%;
+}
+
+@media (max-width:992px){
+    .customgift_des, .work_desc, .description_text, .about_des, .contact_des{
+        width: 100%;
+        font-size: 14px;
+    }
+    .form_w{
+        width: 100%;
+    }
+    .foot_des, .foot2{
+        font-size: 14px;
+    }
+    .customgift_text{
+        margin-left: 0;
+    } 
+    .customgift img, .work_section img{
+        width: 100%;
+    }
+}
