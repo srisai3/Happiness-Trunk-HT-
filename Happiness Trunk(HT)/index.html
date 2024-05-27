@@ -35,23 +35,23 @@
                 </a>
                 <button class="navbar-toggler d-lg-none" type="button" data-bs-toggle="collapse"
                     data-bs-target="#collapsibleNavId" aria-controls="collapsibleNavId" aria-expanded="false"
-                    aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
+                    aria-label="Toggle navigation" onclick="toggleIcon(this)">
+                    <img src="Assets/Images/menu-1.svg" alt="Menu" id="menuIcon">
                 </button>
                 <div class="collapse navbar-collapse" id="collapsibleNavId">
                     <ul class="navbar-nav mx-auto mt-2 mt-lg-0">
                         <li class="nav-item">
-                            <a class="nav-link active" href="#" aria-current="page">Home
+                            <a class="nav-link playfair_font scroll-link active" href="#bannerImageSection" aria-current="page" >Home
                                 <span class="visually-hidden">(current)</span></a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Our Gifts</a>
+                            <a class="nav-link playfair_font scroll-link" href="#customgift_sec">Our Gifts</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#aboutUs_sec">About</a>
+                            <a class="nav-link playfair_font scroll-link" href="#aboutUs_sec">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="#contact_sec">Contact</a>
+                            <a class="nav-link playfair_font scroll-link" href="#contact_sec">Contact</a>
                         </li>
                     </ul>
                     <button class="invisible btn btn-primary" style="width: 100px;">Login</button>
@@ -60,15 +60,15 @@
         </nav>
     </header>
     <!--   Banner Image Section   -->
-    <section class="bannerImageSection">
+    <section class="bannerImageSection" id="bannerImageSection">
         <img src="Assets/Images/Banner Image.png" class="img-fluid" alt="Banner Image" />
     </section>
     <!--   Description Section   -->
-    <section class="descriptionSection text-center py-5 container d-flex flex-column align-items-center">
-        <h1 class="py-2 playfair_font">
+    <section class="descriptionSection text-center py-2 py-md-5 container d-flex flex-column align-items-center">
+        <h1 class="py-2 playfair_font h21">
             Your Gifting Destination
         </h1>
-        <p class="py-2 pb-4 description_text">
+        <p class="py-2 pb-0 pb-md-4 description_text">
             Happiness Trunk, a gifting company, has been the go-to destination for those seeking curated bulk gifting
             solutions for weddings, traditional ceremonies, birthdays, corporate events, or any occasion.</br></br>
 
@@ -80,13 +80,13 @@
         </p>
     </section>
     <!--   Custom Gift Section   -->
-    <section class="customgift py-5">
+    <section class="customgift py-2" id="customgift_sec">
         <div class="container">
             <div
                 class="d-flex align-items-center justify-content-center flex-column flex-md-row text-center text-md-start pb-4">
                 <img src="Assets/Images/Custom_gift_img.png" alt="Custom Gift Design Image" width="50%">
                 <div class="customgift_text d-flex flex-column align-items-center py-4">
-                    <h1 class="py-2 playfair_font">
+                    <h1 class="py-2 playfair_font h21">
                         Custom Gift Design
                     </h1>
                     <p class="pt-2 customgift_des">
@@ -99,32 +99,32 @@
         </div>
     </section>
     <!--   Our Work Section   -->
-    <section class="work_section py-5">
+    <section class="work_section py-0 py-md-5">
         <div class="container">
             <div
                 class="d-flex align-items-center justify-content-center flex-column-reverse flex-md-row text-center text-md-start pb-4">
                 <div>
-                    <h1 class="py-2 playfair_font">Our Work</h1>
+                    <h1 class="py-2 playfair_font h21">Our Work</h1>
                     <p class="pt-2 work_desc">Our team understands that gifting is more than just exchanging material
                         items; it's about creating connections, expressing gratitude, and celebrating life's moments,
                         big and small. Whether it's a birthday, anniversary, or a simple gesture to brighten someone's
                         day, Happinesstrunk ensures that each gift tells a story and evokes smiles.</p>
 
-                    <p class="work_desc pb-2">Click on the below button to view our work in Instagram</p>
-                    <button class="insta_btn">Instagram</button>
+                    <p class="work_desc pb-0 pb-md-2" >Click on the below button to view our work in Instagram</p>
+                    <button class="insta_btn playfair_font" >Instagram</button>
                 </div>
                 <img src="Assets/Images/Our_work_img.png" alt="Our Work Img" width="50%">
             </div>
         </div>
     </section>
     <!--   About US Section   -->
-    <section class="abooutus py-5" id="aboutUs_sec">
+    <section class="abooutus py-2" id="aboutUs_sec">
         <div class="container">
             <div class="about">
-                <div class="d-flex flex-column align-items-center justify-content-center py-5">
-                    <h3 class="py-2 mb-5 mt-3 about_head text-center playfair_font">About Us</h3>
-                    <h1 class="py-2 text-center playfair_font">We Believe In Creating a Culture</h1>
-                    <p class="py-2 mb-3 about_des text-center">
+                <div class="d-flex flex-column align-items-center justify-content-center py-2 py-md-5">
+                    <h4 class="py-2 mb-md-5 mb-0 mt-3 about_head text-center playfair_font">About Us</h4>
+                    <h2 class="py-3 text-center playfair_font">We Believe In Creating a Culture</h2>
+                    <p class="py-2 mb-md-1 mb-3 about_des text-center font1">
                         We believe every gift has a story to tell. Story about celebrating, thanking, welcoming, or just
                         about a personal touch.</br>
                         We believe in the power of "gifting" and creating culture by giving beautiful, more thoughtful
@@ -137,10 +137,10 @@
         </div>
     </section>
     <!--   Contact Section   -->
-    <section class="contact py-5" id="contact_sec">
+    <section class="contact py-0 py-lg-5" id="contact_sec">
         <div class="container">
-            <div class="d-flex flex-column align-items-center justify-content-center py-5">
-                <h3 class="py-2 mb-3 contact_head playfair_font">Get In Touch</h3>
+            <div class="d-flex flex-column align-items-center justify-content-center py-1 py-lg-4">
+                <h3 class="py-1 mb-3 contact_head playfair_font">Get In Touch</h3>
                 <p class="contact_des text-center py-2">
                     We’d love to hear from you!<br>
                     Email is a great way to contact us, please reach out at <a href="mailto:happinesstrunk@gmail.com"
@@ -167,16 +167,101 @@
                                 placeholder="Your Message" required></textarea>
                         </div>
                         <div class="col-md-12 text-center">
-                            <button type="submit" class="btn btn-primary submit_btn my-4">Send Message</button>
+                            <button type="submit" class="btn btn-primary submit_btn my-4 playfair_font">Send Message</button>
                         </div>
                 </div>
             </div>
         </div>
     </section>
     <!--   Clients Section   -->
-    <section class="clients py-5 mb-5">
-        <h3 class="py-3 clients_head text-center playfair_font">Notable Clients</h3>
-        <img src="Assets/Images/clients.png" alt="Notable Clients" width="100%" class="py-3">
+    <section class="clients py-0 mb-2 mb-lg-5">
+        <h3 class="py-0 clients_head text-center playfair_font">Notable Clients</h3>
+        <div class="container">
+            <div id="clientcarousel" class="carousel slide" data-bs-ride="carousel" data-bs-interval="2000">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="row">
+                      <div class="col-3">
+                        <img src="Assets/Images/Notable Clients/Logo 1.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="col-3">
+                        <img src="Assets/Images/Notable Clients/Logo 2.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="col-3">
+                        <img src="Assets/Images/Notable Clients/Logo 3.png" class="d-block w-100" alt="...">
+                      </div>
+                      <div class="col-3">
+                        <img src="Assets/Images/Notable Clients/Logo 4.png" class="d-block w-100" alt="...">
+                      </div>
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                            <img src="Assets/Images/Notable Clients/Logo 5.png" class="d-block w-100" alt="...">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 3.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                            <img src="Assets/Images/Notable Clients/Logo 5.png" class="d-block w-100" alt="...">
+                          </div>
+                          <div class="col-3">
+                            <img src="Assets/Images/Notable Clients/Logo 1.png" class="d-block w-100" alt="...">
+                          </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 4.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 2.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="row">
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 5.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 1.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 2.png" class="d-block w-100" alt="...">
+                        </div>
+                        <div class="col-3">
+                          <img src="Assets/Images/Notable Clients/Logo 3.png" class="d-block w-100" alt="...">
+                        </div>
+                      </div>
+                  </div>
+                </div>
+            </div>
+        </div>
     </section>
     <!--   Footer Section   -->
     <footer>
@@ -186,7 +271,7 @@
                     <img src="Assets/Images/logo.svg" alt="Happiness Trunk logo" style="max-width: 90px;">
                 </div>
                 <div class="row py-4">
-                    <div class="col-md-4 foot_des">
+                    <div class="col-md-3 foot_des">
                         <p>
                             HAPPINESSTRUNK | We are a brand that celebrates people and moments through thoughtful gifts
                             that have a unique story to tell. Shop curated personal or corporate gifts to your friends &
@@ -195,12 +280,12 @@
                             service.
                         </p>
                     </div>
-                    <div class="col-sm-2">
+                    <div class="col-sm-3">
 
                     </div>
                     <div class="col-md-3 ">
                         <ul class="foot_style list-unstyled">
-                            <li class="foot_head playfair_font">Quick Links</li>
+                            <li class="foot_head playfair_font ftrtxt">Quick Links</li>
                             <li><a href="#">Our Gifts</a></li>
                             <li><a href="#aboutUs_sec">About</a></li>
                             <li><a href="#contact_sec">Cotact</a></li>
@@ -208,7 +293,7 @@
                     </div>
                     <div class="col-md-3">
                         <ul class="foot_style list-unstyled">
-                            <li class="foot_head playfair_font">Address</li>
+                            <li class="foot_head playfair_font ftrtxt">Address</li>
                             <li>VRRN Splendor, 4th Floor,</br>
                                 Rd Number 78, Film Nagar, Hyderabad,</br>
                                 Telangana 500033</li>
