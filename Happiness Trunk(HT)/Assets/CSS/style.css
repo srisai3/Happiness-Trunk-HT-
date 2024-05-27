@@ -193,8 +193,17 @@ html{
     p {
         margin-bottom: 0.2rem !important;
     }
-    .contact_head::after, .clients_head::after, .contact_head::before, .clients_head::before {
-        display: none;
+    .about_head::before{
+        content:url('../Images/white_left.svg');
+    }
+    .about_head::after{
+        content:url('../Images/white_right.svg');
+    }
+    .contact_head::before, .clients_head::before{
+        content:url('../Images/black_left.svg');
+    }
+    .contact_head::after, .clients_head::after{
+        content:url('../Images/black_right.svg');
     }
     .invisible {
         display: none !important;
